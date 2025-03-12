@@ -1,0 +1,83 @@
+/* Font links (Global CSS) */
+@font-face {
+    font-family: 'Figtree-Regular';
+    src: url('/vendor/fonts/figtree-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree-Medium';
+    src: url('/vendor/fonts/figtree-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree-Bold';
+    src: url('/vendor/fonts/figtree-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree-ExtraBold';
+    src: url('/vendor/fonts/figtree-extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Root CSS for Variables (Optional) */
+:root {
+    --figtree-regular: 'Figtree-Regular', sans-serif;
+    --figtree-medium: 'Figtree-Medium', sans-serif;
+    --figtree-bold: 'Figtree-Bold', sans-serif;
+    --figtree-extrabold: 'Figtree-ExtraBold', sans-serif;
+}
+
+
+/* Root level color variables */
+:root {
+    --primary-color: #3498db;      /* Blue */
+    --secondary-color: #2ecc71;    /* Green */
+    --accent-color: #e74c3c;       /* Red */
+    --background-color: #f4f4f4;   /* Light Grey */
+    --text-color: #333333;         /* Dark Grey */
+    --heading-color: #222222;      /* Almost Black */
+}
+
+            /* Using the color variables in your CSS */
+            body {
+                background-color: var(--background-color);
+                color: var(--text-color);
+            }
+
+
+        /* Footer Styling */
+        footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer .social-icons li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        footer .social-icons li a {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        footer .social-icons li a:hover {
+            color: #3498db;
+        }
